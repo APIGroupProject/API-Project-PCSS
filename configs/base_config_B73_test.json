@@ -1,0 +1,28 @@
+{
+    "train_csv": "/home/featurize/configs/train_B73.csv",
+    "validation_csv": "/home/featurize/configs/val_B73.csv",
+    "model_dir": "/home/featurize/2stems_B73",
+    "mix_name": "mix",
+    "instrument_list": ["piano", "orchestra"],
+    "sample_rate":22050,
+    "frame_length":2048,
+    "frame_step":512,
+    "T":256,
+    "F":512,
+    "n_channels":2,
+    "separation_exponent":2,
+    "mask_extension":"zeros",
+    "learning_rate": 1e-4,
+    "batch_size":4,
+    "training_cache":"/home/featurize/training_cache",
+    "validation_cache":"/home/featurize/validation_cache",
+    "train_max_steps": 1000000,
+    "throttle_secs":300,
+    "random_seed":0,
+    "save_checkpoints_steps":150,
+    "save_summary_steps":5,
+    "model":{
+            "type":"unet.unet",
+            "params":{}
+            }
+}

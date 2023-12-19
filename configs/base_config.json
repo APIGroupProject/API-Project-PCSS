@@ -1,0 +1,28 @@
+{
+    "train_csv": "configs/train.csv",
+    "validation_csv": "configs/val.csv",
+    "model_dir": "pretrained",
+    "mix_name": "mix",
+    "instrument_list": ["piano", "orchestra"],
+    "sample_rate":22050,
+    "frame_length":2048,
+    "frame_step":512,
+    "T":256,
+    "F":512,
+    "n_channels":1,
+    "separation_exponent":2,
+    "mask_extension":"zeros",
+    "learning_rate": 1e-5,
+    "batch_size":4,
+    "training_cache":"training_cache",
+    "validation_cache":"validation_cache",
+    "train_max_steps": 1000000,
+    "throttle_secs":300,
+    "random_seed":0,
+    "save_checkpoints_steps":150,
+    "save_summary_steps":5,
+    "model":{
+            "type":"unet.unet",
+            "params":{}
+            }
+}
